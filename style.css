@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a default font and background color */
+body {
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+   flex-direction: column;
+   font-family: "Protest Guerrilla", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   letter-spacing: 2px;
+} 
+#logo{
+    max-width: 100%;
+    height: 350px;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+#voice{
+    /* height: 150px; */
+    width: 150px;
+    display: none;
+}
+#name{
+    color: rgba(204, 55, 132, 0.834);
+    font-size: 45px;
+}
+#va{
+    color: rgb(32, 153, 187);
+    font-size: 45px;
+}
+#btn{
+    background: linear-gradient(to right, rgba(204, 55, 132, 0.834),rgb(32, 153, 187));
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(204, 55, 132, 0.834),2px 2px 10px rgb(32, 153, 187);
+    border: none;
+}
+
+#btn:hover{
+    box-shadow: 2px 2px 20px rgba(204, 55, 132, 0.834),2px 2px 20px rgb(32, 153, 187); 
+    background: linear-gradient(to right,rgb(32, 153, 187), rgba(204, 55, 132, 0.834));  
+    transition: 0.5;
+}
+
+@media (max-width: 768px) {
+    #btn {
+        width: 50%; /* Increase width on smaller devices */
+        font-size: 18px; /* Slightly smaller font */
+        padding: 8px 15px; /* Adjust padding for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    #btn {
+        width: 80%; /* Make button take up more space on very small screens */
+        font-size: 16px; /* Further reduce font size */
+        padding: 6px 10px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px; /* Reduce size on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px; /* Further reduce size on mobile phones */
+    }
+}
